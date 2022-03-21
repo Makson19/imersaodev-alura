@@ -1,0 +1,157 @@
+
+/* CORES */
+:root {
+    --color-first: #E50914;
+    --color-second: #FFF;
+    --color-third: #7c5e99;
+
+    --color-black-first: #000;
+    --color-black-second: #303030;
+}
+
+
+/* CORPO */
+body {
+    height: 100vh;
+    font-family: 'Press Start 2P', monospace;
+    color: var(--color-second);
+    background-color: var(--color-black-second);
+}
+
+
+/* TITLE */
+.main-title {
+    color: var(--color-first);
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 0px var(--color-black-first);
+}
+
+
+/* LABEL */
+.main-label {
+    display: block;
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* INPUT */
+.main-input {
+    display: block;
+    width: 420px;
+    height: 45px;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px var(--color-black-first);
+}
+
+
+/* BUTTON */
+.main-btn {
+    display: block;
+    width: 440px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 18px;
+    background-color: var(--color-third);
+    color: var(--color-second);
+    box-shadow: 4px 4px 0px var(--color-black-first);
+    border-radius: 5px;
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* LIST-BANNER */
+.list-banner {
+    padding: 50px 30px;
+    margin-bottom: 10px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* BANNER WRAPPER */
+.banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 300ms linear
+}
+
+.banner-wrapper:hover {
+    transform: scale(1.1);
+}
+
+
+/* BANNER */
+.banner-wrapper .banner {
+    width: 220px;
+    height: 330px; 
+    border: 1px solid var(--color-third);
+    box-shadow: 4px 4px 0px var(--color-black-first);
+}
+
+
+.banner-wrapper .title {
+    width: 180px;
+    height: 48px;
+    overflow-y: hidden;
+    font-size: 12px;
+    color: var(--color-first);
+    text-align: center;
+    text-shadow: 2px 2px 0px var(--color-black-first);
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+.main-footer {
+    
+    padding-bottom: 15px;
+}
+
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-footer .logo-imersao {
+    width: 100px;
+}
+
+
+.main-footer .logo-alura {
+    width: 30px;
+}
+
+
+

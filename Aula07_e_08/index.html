@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Trunfo</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Trunfo World Cup ⚽</h1>
+        <div class="area-logo">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" alt="logo imersão" class="logo-imersao">
+            <a href="https://alura.com.br/" target="_blank" class="logo-link">
+                <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo alura" class="logo-alura">
+            </a>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container-cards">
+            <div class="container-jogador">
+                <div class="opcoes" id="op-jogador">
+                   
+                </div>
+            </div>
+    
+            <div class="card-resultado">
+                <div class="card-apresentacao">
+                    <span class="texto-apresentacao">
+                        Bem-vindo ao Trunfo World Cup! <br><br> Quem vencer 10 partidas primeiro, será o grande campeão.
+                    </span>
+                </div>
+                
+                <div class="container-resultado">
+                    <span id="placar">Placar: 0 x 0</span>
+                    <span id="resultado">Boa sorte!</span>
+                    <button class="btn btn-jogar" id="btn-jogar" onclick="jogar()">Jogar</button>
+                    <button class="btn btn-jogar-novamente" id="btn-jogar-novamente" onclick="jogarNovamente()">Jogar Novamente</button>
+                </div>
+            </div>
+
+            <div class="container-adversario">
+                <div class="opcoes" id="op-adversario"></div>
+            </div>
+        </div>
+
+        <button id="btn-iniciar" onclick="iniciarJogo()">Iniciar Jogo</button>
+        <button id="btn-reiniciar" onclick="reiniciarJogo()">Reiniciar Jogo</button>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

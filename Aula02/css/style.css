@@ -1,0 +1,106 @@
+
+body {
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFF;
+    background-image: url("../img/background.png");
+    background-size: 40vh;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* HEADER */
+.main-header {
+    text-align: center;
+}
+
+.main-header .main-title {
+    margin-top: 15px;
+}
+
+.main-header .logo-imersao {
+    width: 200px;
+    background-color: #D4534A;
+}
+
+.main-header .logo-alura {
+    width: 40px;
+    padding: 2px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #D4534A;
+}
+
+
+/* CONTENT */
+.main-content {
+    height: 400px;
+    width: 800px;
+    background-color: #D4534A;
+    border: 5px double #000;
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px #808080;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.main-content .seletores {
+    flex: 1;
+    text-align: center;
+}
+
+.main-content .seletores #seletor1, #seletor2 {
+    width: 200px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 0px #000;
+    cursor: pointer;
+}
+
+
+.main-content .conversor {
+    flex: 1;
+    text-align: center;
+    border-left: 2px solid #FFF;
+}
+
+.main-content .conversor #input {
+    width: 200px;
+    height: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.main-content .conversor .btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 0px #000;
+    transition: transform 200ms ease-in-out;
+}
+
+.main-content .conversor .btn:hover {
+    transform: scale(1.05);
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+}
+
+
+
+

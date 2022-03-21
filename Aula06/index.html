@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pedra, Papel e Tesoura!</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Pedra, Papel e Tesoura!</h1>
+        <div class="area-logo">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" alt="logo imersão" class="logo-imersao">
+            <a href="https://alura.com.br/" target="_blank" class="logo-link">
+              <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo alura" class="logo-alura">
+              </a>
+          </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- Container contento área de jogo -->
+        <div class="container-jogo">
+            <div class="jogador">
+                <img src="https://i.postimg.cc/j21BNmJW/avatar.png" alt="avatar" class="img img-jogador">
+                <label class="nome-jogador" for="">Jogador 1</label>
+            </div>
+
+            <div class="area-jogo">
+                <span class="title-opcao">Escolha 1 opção:</span>
+                <div class="container-opcoes">
+                    <button class="op btn-pedra" value="pedra" onclick="opcaoPedra()"><img src="https://i.postimg.cc/QNw7N0vz/pedra.png" alt="pedra"></button>
+                    <button class="op btn-papel" value="papel" onclick="opcaoPapel()"><img src="https://i.postimg.cc/RCNpqCZZ/papel.png" alt="papel"></button>
+                    <button class="op btn-tesoura" value="tesoura" onclick="opcaoTesoura()"><img src="https://i.postimg.cc/d3jhJPpP/tesoura.png" alt="tesoura"></button>
+                </div>
+                <!--<button class="btn-jogar">Jogar</button>-->
+
+                <div class="container-resultado">
+                    <span id="time"></span>
+                    <span id="resultado"></span><br><br>
+                    <button class="btn-jogar-novamente" onclick="jogarNovamente()">Jogar Novamente</button>
+                </div>
+            </div>
+
+            <div class="adversario">
+                <img src="https://i.postimg.cc/j21BNmJW/avatar.png" alt="avatar" class="img img-adversario">
+                <label class="nome-adversario" for="">Jogador 2</label>
+            </div>
+        </div>
+
+        <!-- Container dos botões -->
+        <div class="container-btn">
+            <button class="btn-add-jogador" onclick="adicionarJogador()">Adicionar jogador</button>
+            <button class="btn-reiniciar-jogo" onclick="reiniciar()">Reiniciar</button>
+        </div>
+
+        
+        <!-- Modal que aparece quando clicamos no botão "Adicionar jogador" -->
+        <div id="container-cadastro" class="container-cadastro">
+            <button class="btn-fechar" onclick="fechar()">X</button>
+            <div class="cadastro">
+                <label for="name">Nome</label><br>
+                <input class="input" id="name" type="text"><br><br>
+                <label for="url">URL da imagem</label><br>
+                <input class="input" id="url" type="text"><br><br>
+                <button class="btn-add" onclick="adicionar()">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="container-tabela">
+            <h3 class="title-tabela">Tabela de Dados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Vitórias</th>
+                        <th>Empates</th>
+                        <th>Derrotas</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaJogadores"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

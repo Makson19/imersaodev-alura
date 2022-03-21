@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon">
+
+    <title>Calculadora de Média</title>
+</head>
+<body>
+    <header class="main-header"> 
+        <h1 class="title">Calculadora de Média</h1>
+        <p class="subtitle">
+            Descubra qual a sua média de nota de todas as provas!
+        </p><br>
+        
+        <img class="logo-imersao" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" alt="logo imersão"><br>
+        <a class="logo-link" href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo Alura" class="logo-alura">
+        </a>
+    </header>
+
+    <main class="main-content">
+        <h2 class="title">Insira suas notas</h2>
+        <section class="container-notas">
+            <div class="notas nota1">
+                <label for="nota1">1ª nota:</label>
+                <input id="nota1" type="number">
+            </div>
+
+            <div class="notas nota2">
+                <label for="nota2">2ª nota:</label>
+                <input id="nota2" type="number">
+            </div>
+
+            <div class="notas nota3">
+                <label for="nota3">3ª nota:</label>
+                <input id="nota3" type="number">
+            </div>
+        </section>
+        <div class="area-btn">
+            <button class="btn" onclick="calcular()">Calcular</button>
+            <button class="btn" onclick="limpar()">Limpar</button>
+        </div>
+        
+        <span class="resultado"></span>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

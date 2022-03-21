@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
+    background-image: url("../img/bola.png");
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #7A7A7A;
+    color: #FFF;
+}
+
+/* HEADER */
+.header .title {
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .area-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.area-logo .logo-imersao {
+    width: 120px;
+    height: 30px;
+}
+
+.area-logo .logo-alura {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+/* CONTENT */
+.content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content #valor {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.content .area-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.area-buttons .btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px #000;
+    transition: transform 200ms ease-in-out;
+}
+
+.area-buttons .btn:hover {
+    transform: scale(1.05);
+    background-color: #141414;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.content #resultado {
+    margin-top: 40px;
+    font-size: 1.6rem;
+}
+
+.content mark {
+    background-color: #BDBDBD;
+    color: #000;
+    padding: 5px;
+  }
+
+

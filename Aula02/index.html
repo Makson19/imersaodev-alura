@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <img class="main-title" src="img/title.png" alt="Título"><br>
+        <img class="logo-imersao" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" alt="logo imersão"><br>
+        <a class="logo-link" href="https://www.alura.com.br/" target="_blank">
+            <img class="logo-alura" src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo alura">
+        </a>
+    </header>
+    
+    <!-- CONTENT -->
+    <main class="main-content">
+        <section class="seletores">
+            <label class="label" for="seletor1">De&nbsp;&nbsp;&nbsp;</label>
+            <select name="temp" id="seletor1">
+                <option value="">Selecione:</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select><br><br>
+
+            <label class="label" for="seletor2">Para&nbsp;</label>
+            <select name="temp" id="seletor2">
+                <option value="">Selecione:</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select><br><br>
+        </section>
+
+        <section class="conversor">
+            <label class="label" for="input">
+                Digite o valor da temperatura a ser convertida:
+            </label><br>
+            <input id="input" type="number" placeholder="Temperatura"><br>
+            <button class="btn" onclick="converter()">Converter</button><br><br>
+            <span id="resultado"></span>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

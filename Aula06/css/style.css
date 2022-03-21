@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Press+Start+2P&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    background-color: #303030;
+    color: #FFF;
+}
+
+
+/* HEADER */
+
+/* Title */
+.header h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-shadow: 2px 2px 0px #000;
+    color: #E50914;
+}
+
+/* Área do logo da imersão*/
+.header .area-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* Logo da imersão */
+.area-logo .logo-imersao {
+    width: 120px;
+    height: 30px;
+}
+
+/* Logo da Alura */
+.area-logo .logo-alura {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* CONTENT*/
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /*padding: 30px;*/
+}
+
+/*Área de jogo*/
+.content .container-jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-jogo .area-jogo {
+    width: 600px;
+    height: 300px;
+    border: 5px inset #000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 4px 4px 10px #000;
+    background-color: #505050;
+}
+
+.container-jogo .jogador, .adversario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-jogo .jogador:hover, .adversario:hover {
+    transform: scale(1.05);
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #7c5e99;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: #DDD;
+}
+
+.jogador label, .adversario label {
+    font-size: 0.7rem;
+}
+
+
+/* Área onde estão as opções "pedra", "papel" e "tesoura" */
+.area-jogo .title-opcao {
+    display: none;
+}
+
+.area-jogo .container-opcoes {
+    /*display: flex;*/
+    justify-content: center;
+    gap: 5px;
+    display: none;
+}
+
+.area-jogo .container-resultado {
+    display: none;
+}
+
+.container-resultado .btn-jogar-novamente {
+    width: 350px;
+    height: 45px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #000;
+    background-color: #7c5e99;
+    color: #FFF;
+}
+
+.container-resultado .btn-jogar-novamente:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.container-opcoes .op img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-opcoes .op:hover {
+    transform: scale(1.05);
+}
+
+
+/* Container que contém os botões "Adicionar jogador" e "Reiniciar" */
+.content .container-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Botões "Adicionar jogador" e "Reiniciar" */
+.btn-add-jogador, .btn-reiniciar-jogo {
+    width: 350px;
+    height: 45px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #000;
+    background-color: #7c5e99;
+    color: #FFF;
+}
+
+.btn-add-jogador:hover, .btn-reiniciar-jogo:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Modal que aparece após clicar no botão "Adicionar jogador" */
+.container-cadastro {
+    width: 400px;
+    height: 350px;
+    padding: 15px;
+    background-color: #DDD;
+    color: #000;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 175px);
+    border: 8px groove #000;
+    border-radius: 15px;
+    display: none;
+}
+
+.container-cadastro .btn-fechar {
+    display: block;
+    margin-left: auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    background-color: red;
+    color: #FFF;
+    padding: 10px;
+    box-shadow: 4px 4px 10px #000;
+}
+
+.container-cadastro .btn-fechar:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+} 
+
+.container-cadastro .cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro .input {
+    width: 300px;
+    height: 40px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+}
+
+.cadastro .btn-add {
+    width: 350px;
+    height: 45px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.3rem;
+    background-color: #7c5e99;
+    color: #FFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px #000;
+}
+
+.cadastro .btn-add:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Container contendo o título da tabela e a tabela */
+.container-tabela {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #7c5e99;
+    
+}
+
+th, tr, td {
+    border: 1px solid #7c5e99;
+    border-collapse: collapse;
+    padding: 5px;
+}
+

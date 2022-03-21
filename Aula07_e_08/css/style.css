@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
+    text-align: center;
+    background-image: url("../img/wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: saturate(0.8);
+    color: #FFF;
+}
+
+
+/* ==== HEADER ==== */
+.header {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(64, 105, 28, 0.7);
+    height: 10vh;
+}
+
+.header .title{
+    height: 100%;
+    padding-top: 20px;
+    
+}
+
+.header .area-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(64, 105, 28);
+    padding: 10px;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 5px;
+}
+
+.area-logo .logo-imersao {
+    width: 120px;
+    height: 30px;
+}
+
+.area-logo .logo-alura {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+
+/* ==== CONTENT ==== */
+.content {
+    height: 90vh;
+    /*background-color: rgb(80,80,80);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Container que contém os cards */
+.content .container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Container que contém os cards do jogador e do adversario. */
+.container-cards .container-jogador, .container-adversario {
+    width: 350px;
+    height: 500px;
+    background-image: url("../img/card-int.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    background-color: rgb(64, 105, 28);
+    border: 5px inset #000000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 1;
+}
+
+.opcoes {
+    display: none;
+    text-align: left;
+    text-transform: capitalize;
+    background-color: #000000;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nome-jogador, .nome-adversario {
+    padding-bottom: 2px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #FFF;
+}
+
+/* Container que contém o resultado do jogo. */
+.container-cards .card-resultado{
+    width: 600px;
+    height: 600px;
+    background-color: rgba(80,80,80,0.95);
+    border: 5px inset #000000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-resultado .card-apresentacao{
+    /*display: none;*/
+    margin: 10px;
+}
+
+.card-resultado .container-resultado {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+
+.container-resultado .btn {
+    width: 320px;
+    height: 45px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 300ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-jogar-novamente {
+    display: none;
+}
+
+.container-resultado #resultado {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+
+/* ==== BOTÃO "Iniciar jogo" ==== */
+.content #btn-iniciar {
+    width: 420px;
+    height: 50px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 300ms ease-in-out;
+}
+
+#btn-iniciar:hover {
+    transform: scale(1.05);
+}
+
+
+/* ==== BOTÃO "Reiniciar jogo" ==== */
+.content #btn-reiniciar {
+    display: none;
+    width: 420px;
+    height: 50px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 300ms ease-in-out;
+}
+
+#btn-reiniciar:hover {
+    transform: scale(1.05);
+}
+
+
+
+

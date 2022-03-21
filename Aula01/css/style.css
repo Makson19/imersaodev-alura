@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    background-image: url(../img/background4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+
+/* HEADER */
+.main-header {
+    text-align: center;
+}
+
+.main-header .title {
+    text-shadow: 2px 2px 2px #808080;
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.main-header .subtitle {
+    display: inline;
+    font-size: 1.5rem;
+    background-color: #DDD;
+    padding: 2px 10px;
+}
+
+.main-header .logo-imersao {
+    width: 200px;
+    background-color: #000;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.main-header .logo-alura {
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #000;
+    padding: 2px;
+}
+
+
+/* CONTENT */
+.main-content .title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 70px;
+}
+
+.main-content .container-notas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.container-notas .notas {
+    margin: 15px auto;
+}
+
+.notas label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.notas input {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.main-content .area-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.main-content .btn {
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #000;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.main-content .btn:hover {
+    background-color: #A4A4A4;
+    color: #FFF;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 200ms ease-in-out;
+}
+
+.main-content .resultado {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+
